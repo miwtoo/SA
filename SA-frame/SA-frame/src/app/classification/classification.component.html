@@ -1,0 +1,76 @@
+ิ<body>
+<div class="body1">
+  <ul>
+    <h1>จัดหมวดหมู่</h1>
+    <p>สินค้า</p>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="ชื่อสินค้า" value="">
+      </mat-form-field>
+    </form>
+    <p>หมวดหมู่</p>
+    <mat-form-field>
+      <mat-select placeholder="หมวดหมู่ของสินค้า" [(value)]="select1">
+        <mat-option *ngFor="let cc of c" [value]="cc">
+          {{cc}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <p>ประเภท</p>
+    <mat-form-field>
+      <mat-select placeholder="ประเภทของสินค้า" [(value)]="select2">
+        <mat-option value="สินค้าทั่วไป">สินค้าทั่วไป</mat-option>
+        <mat-option value="สินค้ายอดนิยม">สินค้ายอดนิยม</mat-option>
+        <mat-option value="สินค้ามาใหม่">สินค้ามาใหม่</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <p>ส่งจากประเทศ</p>
+    <mat-form-field>
+      <mat-select placeholder="ประเทศ" [(value)]="select3">
+        <mat-option *ngFor="let cc of country " [value]="cc">
+          {{cc}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field><br>
+    <button mat-raised-button color="primary" (click)="save()">บันทึก</button>
+  </ul>
+</div>
+<div class="body2">
+  <ul>
+  <h1>แก้ไขหมวดหมู่</h1>
+  <p>สินค้า</p>
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="ชื่อสินค้า" value="">
+    </mat-form-field>
+  </form>
+  <p>หมวดหมู่</p>
+  <mat-form-field>
+    <mat-select placeholder="หมวดหมู่ของสินค้า" [(value)]="select4">
+      <mat-option *ngFor="let cc of c" [value]="cc">
+        {{cc}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <p>ประเภท</p>
+  <mat-form-field>
+    <mat-select placeholder="ประเภทของสินค้า" [(value)]="select5">
+      <mat-option value="สินค้าทั่วไป">สินค้าทั่วไป</mat-option>
+      <mat-option value="สินค้ายอดนิยม">สินค้ายอดนิยม</mat-option>
+      <mat-option value="สินค้ามาใหม่">สินค้ามาใหม่</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <p>ส่งจากประเทศ</p>
+  <mat-form-field>
+    <mat-select placeholder="ประเทศ" [(value)]="select6">
+      <mat-option *ngFor="let cc of country " [value]="cc">
+        {{cc}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field><br>
+  <button mat-raised-button color="primary" (click)="update()">บันทึก</button>
+  </ul>
+</div>
+</body>
+
+

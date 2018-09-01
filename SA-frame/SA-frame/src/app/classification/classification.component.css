@@ -1,0 +1,22 @@
+h1{
+  font-size: 18px;
+
+}
+li.a{
+  margin: 100px 150px 100px 80px;
+
+}
+
+div.body1{
+  border-style: solid;
+  margin-left: 180px;
+  margin-right: 300px;
+  width: 500px;
+}
+div.body2{
+  border-style: solid;
+  margin-top: -585px;
+  margin-left: 900px;
+  margin-right: 350px;
+  width: 500px;
+}
