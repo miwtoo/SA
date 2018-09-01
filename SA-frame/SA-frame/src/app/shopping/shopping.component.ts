@@ -26,6 +26,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class ShoppingComponent implements OnInit {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
+  items = ['p','s','b','a','m','t','k','q'];
   constructor() { }
 
   ngOnInit() {
