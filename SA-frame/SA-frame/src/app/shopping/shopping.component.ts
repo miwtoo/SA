@@ -16,7 +16,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
   {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
   {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
+  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'}
 ];
 @Component({
   selector: 'app-shopping',
@@ -44,11 +44,8 @@ export class ShoppingComponent implements OnInit {
     {img:'https://thechive.files.wordpress.com/2018/03/service-dog-memes-always-bring-out-the-smiles-14.jpg?quality=85&strip=info&w=600',name:"Dog O",price:872},
     {img:'https://i.ytimg.com/vi/eUxQnXunpmA/maxresdefault.jpg',name:"Dog P",price:782.5}
   ];
-  collection = [];
+  
   constructor() {
-    for (let i = 1; i <= 100; i++) {
-      this.collection.push(`item ${i}`);
-    }
    }
 
   ngOnInit() {
