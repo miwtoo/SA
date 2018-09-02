@@ -9,13 +9,14 @@ li.a{
 
 div.body1{
   border-style: solid;
+  margin: 30px;
   margin-left: 180px;
   margin-right: 300px;
   width: 500px;
 }
 div.body2{
   border-style: solid;
-  margin-top: -585px;
+  margin-top: -609px;
   margin-left: 900px;
   margin-right: 350px;
   width: 500px;
