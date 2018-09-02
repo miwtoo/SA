@@ -13,6 +13,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatTableModule} from '@angular/material/table';
 import { CardComponent } from './card/card.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 const appRoutes: Routes = [
   {path: 'classification', component: ClassificationComponent},
@@ -42,6 +43,7 @@ const appRoutes: Routes = [
     MatInputModule,
     MatTableModule,
     MatGridListModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
