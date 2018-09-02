@@ -5,8 +5,8 @@
 </mat-toolbar>
 
 <mat-grid-list   cols="4" rowHeight="30rem"> 
-  <mat-grid-tile *ngFor="let item of items | paginate: { itemsPerPage: 8, currentPage: p }" >
-    <app-card></app-card>
+  <mat-grid-tile *ngFor="let item of items | paginate: { itemsPerPage: 4, currentPage: p }" >
+    <app-card [src]="item.img" [price]="item.price" [name]="item.name"></app-card>
   </mat-grid-tile>
 </mat-grid-list>  
 
